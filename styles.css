@@ -1,0 +1,1290 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.heading h2{
+    color: aqua;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 5%;
+    letter-spacing: 10px;
+    
+}
+
+span{
+    border-radius: 3px;
+}
+
+.para{
+    color: whitesmoke;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding-top: 1%;
+    word-spacing: 5px;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+
+
+    /* =================Contact================= */
+    .contact{
+        height: 190vh;
+        width: 100%;
+        background-attachment: fixed;
+        background: linear-gradient(rgba(3, 5, 2, 0.55),rgba(0,0,0,0.8)),url(/brick.jpg);
+    }
+
+
+  
+
+    .login-box {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        padding: 40px 150px;
+        transform: translate(-50%,10%);
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+      }
+
+      
+      
+      .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+      }
+
+      .login-box .user-box label {
+        position: relative;
+        top:0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+        transform: translateY(-90%);
+      }
+      
+      .login-box .user-box input:focus ~ label,
+      .login-box .user-box input:valid ~ label {
+        top: -30px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+      }
+      
+      .login-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+      }
+      
+      .login-box a:hover {
+        background: #03e9f4;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 100px #03e9f4;
+      }
+      
+      .login-box a span {
+        position: absolute;
+        display:block;
+      }
+
+
+
+      
+      .login-box a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+        animation: btn-anim1 1s linear infinite;
+      }
+      
+      @keyframes btn-anim1 {
+        0% {
+          left: -100%;
+        }
+        50%,100% {
+          left: 100%;
+        }
+      }
+      
+      .login-box a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #03e9f4);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s
+      }
+      
+      @keyframes btn-anim2 {
+        0% {
+          top: -100%;
+        }
+        50%,100% {
+          top: 100%;
+        }
+      }
+      
+      .login-box a span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #03e9f4);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+      }
+      
+      @keyframes btn-anim3 {
+        0% {
+          right: -100%;
+        }
+        50%,100% {
+          right: 100%;
+        }
+      }
+      
+      .login-box a span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s
+      }
+      
+      @keyframes btn-anim4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,100% {
+          bottom: 100%;
+        }
+      }
+
+
+/* ==================footer================== */
+
+footer{
+  height: 52vh;
+  width: 100%;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/brick.jpg);
+}
+
+
+
+.foot{
+  width: 100%;
+  height: 50vh;
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);      
+  border-radius: 10px;
+  padding: 5%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  /* transform: translateY(-10vh); */
+}
+
+.MA h2{
+  font-family: 'Michroma', sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 8px;
+  letter-spacing: 8px;
+  text-align: center;
+
+}
+
+
+.footpara{
+  font-family: 'Michroma', sans-serif;
+  color: aqua;
+  font-size: small;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 4%;
+}
+
+.addnum{
+  width: 50%;
+}
+
+.addnum-social{
+  display: flex;
+  border-bottom: 1px solid rgb(65, 65, 65);
+  padding-bottom: 2%;
+}
+
+.addnum i{
+  font-size: 22px;
+  color: aqua;
+  padding-bottom: 20px;
+}
+
+.addnum{
+  font-size: 15px;
+  word-spacing: 4px;
+  color: whitesmoke;
+
+}
+
+.social{
+  width: 40%;
+  margin-left: 40%;
+}
+
+
+.social a i{
+  color: white;
+  font-size: 35px;
+  margin: 18px;
+}
+
+.social a i:hover{
+  color: aqua;
+}
+
+
+.udruname{
+  color: white;
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  font-size: x-large;
+  word-spacing: 5px;
+  padding-top: 25px;
+}
+
+.udruname span{
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+=====================  RESPONSIVE  =========================
+============================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1300px) {
+  .cardses{
+    width: 70%;
+  }
+
+
+  .addnum{
+    width: 85%;
+  }
+
+  
+ .social{
+    width: 40%;
+    margin-left: 0%;
+  }
+
+  .about{
+    height:72vh ;
+  }
+  .projects{
+    height:152vh ;
+  }
+  .contact{
+    height:122vh ;
+  }
+  .foot{
+    height:41vh ;
+  }
+  footer{
+    height:42vh ;
+  }
+}
+
+
+@media(max-width:1250px) {
+  .addnum{
+    width: 75%;
+  }
+
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+}
+
+
+@media(max-width:1250px){
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+
+.para1{
+  margin-left: 9%;
+}
+
+.subheading h3{
+  margin-left: 25%;
+}
+
+.cardses{
+  width: 72%;
+}
+}
+
+
+@media(max-width:1150px){
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+
+.para1{
+  margin-left: 7%;
+}
+
+.subheading h3{
+  margin-left: 21%;
+}
+
+.skills .subheading h3{
+  margin-left: 28%;
+}
+
+.skills{
+  margin-left: 0%;
+}
+
+.cardses{
+  width: 73%;
+}
+
+.addnum{
+  width: 72%;
+}
+
+footer{
+  height: 51vh;
+}
+
+.foot{
+  height: 50vh;
+}
+}
+
+
+@media(max-width:1100px){
+  .addnum{
+    width: 65%;
+  }
+
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+
+.para1{
+  margin-left: 5%;
+}
+
+.subheading h3{
+  margin-left: 16%;
+}
+
+.skills .subheading h3{
+  margin-left: 28%;
+}
+
+.skills{
+  margin-left: 0%;
+}
+
+.cardses{
+  width: 74%;
+}
+
+.about{
+  height:72vh ;
+}
+.projects{
+  height:152vh ;
+}
+.contact{
+  height:122vh ;
+}
+.foot{
+  height:41vh ;
+}
+footer{
+  height:42vh ;
+}
+}
+
+
+@media(max-width:1050px){
+
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+
+  .addnum{
+    width: 63%;
+  }
+
+  .cardses{
+    width: 75%;
+  }
+
+  
+.para1{
+  margin-left: 5%;
+}
+
+.knowme{
+  width: 56%;
+}
+
+div.menu-pane {
+  width: 20vw;
+}
+}
+
+
+@media(max-width:1000px){
+
+  .home {
+    background-image: url(/Responsive\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+  .addnum-social{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+  }
+
+  .cardses{
+    width: 76%;
+  }
+
+  #aboutpart1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.para1{
+  width: 100%;
+  margin-left: 12%;
+}
+
+.knowme{
+  width: 85%;
+  padding-top: 2%;
+}
+
+
+.subheading h3{
+  text-align: center;
+}
+
+.skills .subheading h3{
+  margin-left: -1%;
+}
+
+.icon{
+  padding-top: 2%;
+  display: flex;
+  gap: 13%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 9%;
+}
+
+.skills{
+  padding-top: 0;
+}
+
+.para{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.social{
+  width: 100%;
+}
+
+
+.addnum{
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.footadd{
+  width: 40%;
+  margin-left: 31%;
+}
+
+.social{
+  width: 50%;
+  margin-left: 33%;
+  padding-top: 5%;
+}
+
+
+.social a i{
+  color: white;
+  font-size: 25px;
+  margin: 18px;
+}
+
+.logo{
+  padding-top:15%;
+  
+}
+
+.about{
+  height:107vh ;
+}
+.projects{
+  height:145vh ;
+}
+.contact{
+  height:122vh ;
+}
+.foot{
+  height:54vh ;
+}
+footer{
+  height:55vh ;
+}
+
+}
+
+@media(max-width:950px){
+  .cardses{
+    width: 78%;
+  }
+}
+
+@media(max-width:900px){
+  .cardses{
+    width: 79%;
+  }
+
+  .social{
+    margin-left: 31%;
+  }
+}
+
+@media(max-width:850px){
+  .cardses{
+    width: 81%;
+  }
+
+  .social{
+    margin-left: 30%;
+  }
+}
+
+
+@media(max-width:800px){
+
+  .cardses{
+    width: 83%;
+    padding-top: 5%;
+  }
+
+  .login-box {
+    width: 700px;
+  }
+
+  .dis{
+    font-size: 14px;
+  }
+
+  .logo{
+    padding-top:15%;
+    padding-bottom: 5%;
+    
+  }
+
+  div.menu-pane {
+    width: 25vw;
+  }
+
+  .hamburger-icon {
+    top: 4vh;
+    left: 4vw;
+  }
+  
+  .social{
+    margin-left: 28%;
+  }
+
+  .name{
+    margin-left: 3%;
+  }
+
+  .name h1{
+    font-size: 30px;
+  }
+
+
+  .about{
+    height:98vh ;
+  }
+  .projects{
+    height:145vh ;
+  }
+  .contact{
+    height:122vh ;
+  }
+  .foot{
+    height:52vh ;
+  }
+  footer{
+    height:53vh ;
+  }
+}
+
+
+@media(max-width:750px){
+  .cardses{
+    width: 86%;
+    padding-top: 5%;
+  }
+
+  .login-box {
+    width: 600px;
+  }
+
+  .social{
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .footadd {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .addnum{
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+  }
+}
+
+@media(max-width:700px){
+
+  .cardses{
+    width: 87%;
+    padding-top: 5%;
+  }
+
+
+  .social{
+    margin-left: 25%;
+    width: 55%;
+  }
+
+  .icon{
+    margin-left: 11%;
+  }
+
+  .dis{
+    font-size: 13px;
+  }
+
+  .name h1{
+    font-size: 26px;
+    padding-top: 10%;
+  }
+
+  .logo{
+    padding-top: 20%;
+  }
+
+  .para1{
+    margin-left: 9%;
+  }
+
+  div.menu-pane {
+    width: 30vw;
+  }
+
+}
+
+
+@media(max-width:650px){
+  .dis{
+    font-size: 12px;
+    padding-bottom: 20%;
+  }
+
+  .name h1{
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .cardses{
+    width: 89%;
+  }
+
+  
+  .form {
+    width: 80%;
+    padding: 40px 50px;
+    margin: 10%;
+  }
+
+  i{
+    font-size: 100px;
+  }
+
+  .social{
+    width: 60%;
+    margin-left: 22%;
+  }
+
+  .heading h2{
+    font-size: 25px;
+  }
+
+  .subheading h3{
+  font-size: large;
+  }
+
+  .clickimg{
+    font-size: medium;
+  }
+
+  .para{
+    font-size: medium;
+  }
+
+  .para1{
+    font-size: medium;
+  }
+  
+  .about{
+    height:87vh ;
+  }
+  .projects{
+    height:138vh ;
+  }
+  .contact{
+    height:125vh ;
+  }
+  .foot{
+    height:52vh ;
+  }
+  footer{
+    height:53vh ;
+  }
+
+
+}
+
+
+@media(max-width:600px){
+  .dis{
+    font-size: 12px;
+    padding-bottom: 24%;
+    word-spacing: 5px;
+  }
+
+  .name h1{
+    font-size: 22px;
+    margin-left: 0;
+    letter-spacing: 22px;
+    padding-top: 13%;
+  }
+
+  div.menu-pane {
+    width: 35vw;
+  }
+
+
+  
+  .login-box {
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px 50px;
+    transform: translate(-50%,10%);
+    margin: 0%;
+  }
+
+  i{
+    font-size: 100px;
+  }
+
+  .social{
+    width: 65%;
+    margin-left: 19%;
+  }
+
+  .footadd{
+    width: 60%;
+    margin-left: 22%;
+  }
+
+  .heading h2{
+    font-size: 25px;
+  }
+
+  .subheading h3{
+  font-size: large;
+  }
+
+  .clickimg{
+    font-size: medium;
+  }
+
+  .para{
+    font-size: medium;
+  }
+
+  .para1{
+    font-size: medium;
+  }
+
+  .product{
+    top: 50%;left: 50%;
+    transform: translate(0%,0%);
+    width: 80%;
+    height: 190px;
+  }
+  
+
+.product .imgbox img{
+    width: 100%;
+    height: 190px;
+    
+}
+
+.cardses{
+  width: 96%;
+  padding-left: 12%;
+}
+
+.cdis{
+  font-size: 12px;
+}
+
+
+
+
+.MA h2{
+  font-size: 15px;
+}
+
+.footpara{
+  font-size: x-small;
+}
+
+.addnum i{
+  font-size: 17px;
+
+}
+
+
+.about{
+  height:87vh ;
+}
+.projects{
+  height:112vh ;
+}
+.contact{
+  height:122vh ;
+}
+.foot{
+  height:52vh ;
+}
+footer{
+  height:53vh ;
+}
+}
+
+
+
+@media(max-width:550px){
+
+
+  .dis{
+    font-size: 11px;
+    padding-bottom: 20%;
+    word-spacing: 5px;
+  }
+
+  .logo{
+    padding-top: 35%;
+  }
+
+  .logo img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid aqua;
+    padding: 4px;
+}
+
+.cardses{
+  width: 96%;
+  padding-left: 11%;
+}
+
+.login-box {
+  width: 80%;
+}
+
+.social{
+  width: 75%;
+  margin-left: 16%;
+}
+
+.login-box .user-box input {
+  font-size: 12px;
+}
+
+.login-box .user-box label {
+  font-size: 12px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 10px;
+}
+
+
+.about{
+  height:92vh ;
+}
+.projects{
+  height:112vh ;
+}
+.contact{
+  height:122vh ;
+}
+.foot{
+  height:48vh ;
+}
+footer{
+  height:49vh ;
+}
+
+}
+
+@media(max-width:500px){
+  .name h1{
+    font-size: 21px;
+    margin-left: 0;
+    letter-spacing: 18px;
+  }
+
+  .dis{
+    font-size: 10px;
+    padding-bottom: 24%;
+    word-spacing: 4px;
+  }
+
+  .heading h2{
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+
+  .cardses{
+    width: 96%;
+    padding-left: 4%;
+  }
+
+  .product{
+    width: 90%;
+  }
+
+  .footadd {
+    width: 70%;
+    margin-left: 16%;
+}
+
+.social {
+  width: 85%;
+  margin-left: 12%;
+}
+
+.skills .subheading h3 {
+  margin-left: -7%;
+}
+
+.icon {
+  margin-left: 8%;
+}
+}
+
+@media(max-width:450px){
+  .name h1{
+    font-size: 21px;
+    margin-left: 0;
+    letter-spacing: 16px;
+  }
+
+  .dis{
+    font-size: 10px;
+    padding-bottom: 24%;
+    word-spacing: 4px;
+  }
+
+  div.menu-pane {
+    width: 40vw;
+  }
+
+  .icon i{
+    font-size: 80px;
+  }
+
+  .icon a{
+    font-size: 20px;
+  }
+
+  .icon {
+    margin-left: 6%;
+  }
+
+  .skills .subheading h3 {
+    margin-left: -7%;
+  }
+
+  .footadd {
+    width: 85%;
+    margin-left: 8%;
+}
+
+.social {
+  width: 90%;
+  margin-left: 7%;
+}
+
+
+.cardses{
+  width: 96%;
+  padding-left: 5%;
+}
+
+.about{
+  height:84vh ;
+}
+.projects{
+  height:107vh ;
+}
+.contact{
+  height:122vh ;
+}
+.foot{
+  height:46vh ;
+}
+footer{
+  height:47vh ;
+}
+
+
+
+}
+
+@media(max-width:400px){
+  .name h1{
+    font-size: 17px;
+    margin-left: 0;
+    letter-spacing: 12px;
+  }
+
+  div.menu-pane {
+    width: 50vw;
+  }
+
+  .clickimg{
+    font-size: small;
+  }
+
+  .para{
+    font-size: small;
+  }
+
+  .para1{
+    font-size: small;
+  }
+
+.product{
+  top: 50%;left: 50%;
+  transform: translate(0%,0%);
+  width: 90%;
+  height: 170px;
+}
+
+
+.product .imgbox img{
+  width: 100%;
+  height: 170px;
+  
+}
+
+
+.MA h2 {
+  font-size: 13px;
+  letter-spacing: 7px;
+}
+
+.social {
+  width: 90%;
+  margin-left: 14%;
+}
+
+.social a{
+  color: white;
+  font-size: 10px;
+  margin: -8px;
+}
+
+.about{
+  height:75vh ;
+}
+.projects{
+  height:97vh ;
+}
+.contact{
+  height: 122vh ;
+}
+.foot{
+  height:46vh ;
+}
+footer{
+  height:47vh ;
+}
+
+
+}
+
+
+@media(max-width:400px){
+
+
+div.menu-pane {
+  width: 60vw;
+}
+
+.MA h2 {
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.social {
+  width: 90%;
+  margin-left: 5%;
+}
+}
